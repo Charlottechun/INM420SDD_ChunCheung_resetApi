@@ -1,0 +1,165 @@
+/* Mobile first */
+body {
+	font-family: "Livvic", serif;
+	font-weight: 300;
+	margin: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* nav */
+nav {
+	background: #ceb99e;
+	color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	padding: 10px 0;
+}
+
+#logo {
+	width: 10rem;
+}
+
+/* main */
+main {
+	padding: 20px;
+	flex: 1;
+}
+
+.mainContainer {
+	max-width: 80%;
+	margin: 0 auto;
+	margin-top: 120px;
+}
+
+	/* search bar */
+form {
+	margin-bottom: 50px;
+}
+
+input {
+	width: 50%;
+	height: 20px;
+	font-size: 1rem;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 20px;
+	border: solid #423e3a;
+	font-family: "Livvic", serif;
+	font-weight: 300;
+}
+
+.submit {
+	font-family: "Livvic", serif;
+	font-weight: 300;
+	font-size: 1rem;
+	padding: 10px 15px;
+	background: #7c898b;
+	color: white;
+	cursor: pointer;
+	border: solid #423e3a;
+	border-radius: 20px;
+}
+
+.submit:hover {
+	background: #ceb99e;
+}
+
+/* Result Container */
+#resultContainer {
+	max-width: 60%;
+	margin: 0 auto;
+	padding: 5px 20px 45px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+
+/* Word Title */
+h2 {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+/* Part of Speech */
+.pos {
+	font-size: 1.2rem;
+	color: #3b4b50;
+	font-style: italic;
+	font-weight: 500;
+}
+
+/* Pronunciation */
+p {
+	color: #666;
+}
+
+/* Definitions */
+h3 {
+	font-size: 1rem;
+	font-weight: 500;
+	margin-top: 15px;
+}
+
+.play {
+  font-size: 20px;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li {
+	background: #f6f4f1;
+	margin: 5px 0;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.suggestion-link {
+	color: #423e3a;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.suggestion-link:hover {
+	text-decoration: underline;
+	color: #7c898b;
+	cursor: pointer;
+}
+
+/* footer */
+footer {
+	background: #7c898b;
+	color: white;
+	padding: 1rem;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.footerText {
+	font-size: 15px;
+	color: white;
+}
+
+/* Desktop style */
+@media (min-width: 768px) {
+	#resultContainer {
+		max-width: 50%;
+	}
+}
